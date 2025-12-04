@@ -29,5 +29,14 @@
         echo "<br>\n";
     }
     ?>
+
+    <h1>การใช้งาน Foreach กับ Index Arrays </h1>
+    <?php
+    $fruits = array("แอปเปิ้ล", "มะละกอ", "กล้วย", "ส้ม" , "องุ่น","มังคุด","ทุเรียน");
+    foreach($fruits as $value) {
+        echo $value;
+        echo "<br>\n";
+    }
+    ?>
 </body>
 </html>
