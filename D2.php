@@ -47,5 +47,24 @@
         echo "<br>\n";
     }
     ?> 
+
+    <h1>การใช้งาน Array 2 มิติ (Two Dimensional Arrays) </h1>
+    <?php
+    $cars = array(
+        array("Volvo",22,18),
+        array("BMW",15,13),
+        array("Saab",5,2),
+        array("Land Rover",17,15)
+    );
+    for ($row = 0; $row < 4; $row++) {
+        echo "<p><b>Row number $row</b></p>";
+        echo "<ul>";
+        $cols = count($cars[$row]);
+        for ($col = 0; $col < 3; $col++) {
+            echo "<li>" . $cars[$row][$col] . "</li>";
+        }
+        echo "</ul>";
+    }
+    ?>
 </body>
 </html>
