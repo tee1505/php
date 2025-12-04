@@ -13,11 +13,12 @@
     
     <hr> <h1> ทอสอบ Array แบบ Associative Array </h1>
     <?php
-    $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43" , "Mon"=>"25");
+    $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43" , "Mon"=>"25", "TEE"=>"22");
     echo "Peter is " . $age['Peter'] . " years old." . "<br>\n"; 
     echo "Ben is " . $age['Ben'] . " years old." . "<br>\n"; 
     echo "Joe is " . $age['Joe'] . " years old." . "<br>\n";
-    echo "Joe is " . $age['Mon'] . " years old." . "<br>\n";
+    echo "Mon is " . $age['Mon'] . " years old." . "<br>\n";
+    echo "TEE is " . $age['TEE'] . " years old." . "<br>\n";
     ?>
     <h1>การใช้งาน For กับ Index Arrays </h1>
     <?php
@@ -38,5 +39,13 @@
         echo "<br>\n";
     }
     ?>
+
+    <?php
+    $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43" , "Mon"=>"25", "TEE"=>"25");
+    foreach($age as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>\n";
+    }
+    ?> 
 </body>
 </html>
